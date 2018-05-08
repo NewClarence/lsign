@@ -10,16 +10,16 @@ source ./env/bin/active<br>
 # 第三步，创建数据库<br>
 参照如下配置<br>
 DATABASES = {<br>
-    'default': {<br>
-        #'ENGINE': 'django.db.backends.sqlite3',<br>
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),<br>
-        'ENGINE': 'django.db.backends.mysql',<br>
-        'NAME': 'django',<br>
-        'USER': 'dbuser',<br>
-        'PASSWORD': 'a',<br>
-        'HOST': '127.0.0.1',<br>
-        'PORT': '3306',<br>
-    }<br>
+    >'default': {<br>
+        >>#'ENGINE': 'django.db.backends.sqlite3',<br>
+        >>#'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),<br>
+        >>'ENGINE': 'django.db.backends.mysql',<br>
+        >>'NAME': 'django',<br>
+        >>'USER': 'dbuser',<br>
+        >>'PASSWORD': 'a',<br>
+        >>'HOST': '127.0.0.1',<br>
+        >>'PORT': '3306',<br>
+    >}<br>
 }<br>
 # 第四步，启动<br>
 ./manage.py runserver 0.0.0.0:8000<br>
