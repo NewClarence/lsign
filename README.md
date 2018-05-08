@@ -9,17 +9,17 @@ source ./env/bin/active<br>
 ./env/bin/pip install -r requirements.txt<br>
 # 第三步，创建数据库<br>
 参照如下配置<br>
-DATABASES = {<br>
-    >'default': {<br>
-        >>#'ENGINE': 'django.db.backends.sqlite3',<br>
-        >>#'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),<br>
-        >>'ENGINE': 'django.db.backends.mysql',<br>
-        >>'NAME': 'django',<br>
-        >>'USER': 'dbuser',<br>
-        >>'PASSWORD': 'a',<br>
-        >>'HOST': '127.0.0.1',<br>
-        >>'PORT': '3306',<br>
-    >}<br>
-}<br>
+DATABASES = {
+    'default': {
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django',
+        'USER': 'dbuser',
+        'PASSWORD': 'a',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
 # 第四步，启动<br>
 ./manage.py runserver 0.0.0.0:8000<br>
