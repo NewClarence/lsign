@@ -21,5 +21,8 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+export LD_LIBRARY_PATH=/opt/mysql/my3306/lib
+./manage.py migrate
 # 第四步，启动<br>
 ./manage.py runserver 0.0.0.0:8000<br>
